@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('.owl-carousel').owlCarousel({
         items:1,
-        loop:false,
+        loop:true,
         center:true,
         nav: true,
         margin:0,
@@ -9,6 +9,12 @@ $(document).ready(function() {
         autoplayHoverPause:true,
         startPosition: 'URLHash'
     });
+
+	$('.owl-carousel').on('changed.owl.carousel', function(e) {
+  		console.log('The current item is at index', e.item.index);
+  	$('.header__link').removeClass('active-link');
+  	$('.header__link').eq(e.item.index - 3).addClass('active-link');  	
+	});
     
 	$('.header__link').click(function() {
 	    $('.header__link').removeClass('active-link');
@@ -23,4 +29,14 @@ $(document).ready(function() {
 	$('.burger-menu__item').click(function() {
 	    $('.burger-menu_icon__wrapper').trigger('click');
 	});
+
+	$('.nav-prev').click(function() {
+		$('.owl-prev').trigger('click');
+	});
+
+	$('.nav-next').click(function() {
+		$('.owl-next').trigger('click');
+	}); 
+
 });
+

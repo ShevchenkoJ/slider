@@ -50,7 +50,7 @@ $white: #ffffff;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 130rem 62rem 0;
+    padding: 130rem 0 0;
     z-index: -10;
 
     @media only screen and (max-width: 964px) {
@@ -124,6 +124,7 @@ $white: #ffffff;
 	color: $text;
 	&:hover {
 		color: $hover-text;
+		opacity: 0.6;
 	}
 } 
 
@@ -149,6 +150,7 @@ $white: #ffffff;
 
 .active-link {
 	font-weight: 600;
+	text-shadow: 2px 2px 20px rgba(0,0,0,0.82);
 }
 
 .burger-menu_icon {
@@ -281,6 +283,31 @@ $white: #ffffff;
 	}
 }
 
+.nav-prev, .nav-next {
+	width: 50rem;
+	height: auto;
+	margin: 15rem;
+	cursor: pointer;
+	&:hover {
+		cursor: pointer;
+		opacity: 0.6;
+	}
+	
+	@media only screen and (max-width: 964px) {
+		display: none;
+	}
+}
+.nav-next {
+	transform: scale(-1, 1);
+
+	@media only screen and (max-width: 964px) {
+		display: none;
+	}
+}
+
+.owl-stage {
+transition: 0.8s !important;
+}
 
 .content_table-row {
 	display: table-row;
@@ -289,12 +316,13 @@ $white: #ffffff;
 	@media only screen and (max-width: 964px) {
 		display: block;
 	    position: relative;
-	    top: -20rem;
+	    top: 30rem;
 	    padding-top: 10rem;
     	margin-top: 10rem;
 	}
 
 	@media only screen and (max-width: 964px) and (orientation: landscape) {
+		position: relative;
 		top: 5rem;
 	}
 }
@@ -304,7 +332,7 @@ $white: #ffffff;
 	display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 15px;
+    padding: 0;
     margin-top: auto;
 
     @media only screen and (max-width: 964px) {
@@ -319,7 +347,7 @@ $white: #ffffff;
 
 .content_text {
 	flex-basis: auto;
-	width: 33%;
+	width: 40%;
 	float: left;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -374,7 +402,7 @@ $white: #ffffff;
 
 .content_image {
 	display: inline-block;
-	width: 67%;
+	width: 60%;
 	height: auto;
 	float: right;
 	flex-basis: auto;
@@ -412,6 +440,7 @@ $white: #ffffff;
     	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     	cursor: pointer;
     	color: $hover-text;
+    	opacity: 0.6;
     }
     &:active {
     	border: 2px solid $text;
@@ -423,6 +452,35 @@ $white: #ffffff;
 
 	@media only screen and (max-width: 750px) {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	}
+}
+
+.instruction-icon_container {
+	display: none;
+
+	@media only screen and (max-width: 964px) {
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: auto;
+	}
+}
+
+.instruction_image {
+	display: none;
+
+	@media only screen and (max-width: 964px) {
+		display: inline-block;
+		width: 50rem;
+    	height: auto;
+    	padding-bottom: 35rem;
+	}
+
+	@media only screen and (max-width: 964px) and (orientation: landscape) {
+		position: absolute;
+		display: inline-block;
+		bottom: 55px;
+		transform: translate(-22px, 0);
 	}
 }
 
@@ -479,6 +537,7 @@ $white: #ffffff;
 	fill: $text;
 	&:hover {
 		fill: $hover-text;
+		opacity: 0.6;
 	}
 }
 
@@ -486,7 +545,7 @@ $white: #ffffff;
 	fill: $white;
 }
 
-/* owl css modified*/
+/* owl css modified
 
 .owl-nav {
 	width: 100%;
@@ -495,6 +554,10 @@ $white: #ffffff;
     left: 0;
     display: inline-block;
     transform: translate(0, 50vh);
+
+    @media only screen and (max-width: 964px) {
+     	display: none;
+    }
 }
 
 .owl-carousel .owl-nav button.owl-prev {
@@ -503,10 +566,14 @@ $white: #ffffff;
     background: none;
     padding: 0 !important;
     font: inherit;
-    width: 100rem;
-    height: 100rem;
+    width: 80rem;
+    height: 80rem;
     float: left;
     outline: none;
+
+    @media only screen and (max-width: 964px) {
+     	display: none;
+    }
 }
 
 .owl-carousel .owl-nav button.owl-next {
@@ -515,10 +582,14 @@ $white: #ffffff;
     background: none;
     padding: 0 !important;
     font: inherit;
-    width: 100rem;
-    height: 100rem;
+    width: 80rem;
+    height: 80rem;
     float: right;
     outline: none;
+
+    @media only screen and (max-width: 964px) {
+     	display: none;
+    }
 }
 
 .owl-carousel .owl-nav button.owl-prev span {
@@ -536,6 +607,10 @@ $white: #ffffff;
     &:hover {
     	color: $hover-text;
     	border: 2px solid $hover-text;
+    }
+
+    @media only screen and (max-width: 964px) {
+     	display: none;
     }
 }
 
@@ -555,6 +630,11 @@ $white: #ffffff;
     	color: $hover-text;	
     	border: 2px solid $hover-text;
 	}
+
+	@media only screen and (max-width: 964px) {
+     	display: none;
+    }
 }
+*/
 
 
