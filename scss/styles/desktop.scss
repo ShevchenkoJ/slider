@@ -239,8 +239,12 @@ $white: #ffffff;
     	left: 0;
    		background-color: white;
     	height: 100%;
-    	padding-top: 38rem;
+    	/*padding-top: 38rem;*/
     	transition-duration: 0.5s;
+	}
+
+	@media only screen and (max-width: 964px) and (orientation: landscape) {
+		padding-top: 0;
 	}
 }
 
@@ -325,6 +329,7 @@ transition: 0.8s !important;
 	@media only screen and (max-width: 964px) and (orientation: landscape) {
 		position: relative;
 		top: 5rem;
+		z-index: 10;
 	}
 }
 
@@ -472,6 +477,7 @@ transition: 0.8s !important;
     height: auto;
     position: absolute;
     bottom: 20px;
+    z-index: 30;
 	}
 }
 
@@ -487,7 +493,6 @@ transition: 0.8s !important;
 
 	@media only screen and (max-width: 964px) and (orientation: landscape) {
 		display: inline-block;
-		z-index: 30;
 	}
 }
 
@@ -498,6 +503,7 @@ transition: 0.8s !important;
     width: 100%;
     margin-top: auto;
     margin-bottom: auto;
+    padding: 0 31rem;
 
 	@media only screen and (max-width: 964px) {
 	    vertical-align: middle;
@@ -509,18 +515,57 @@ transition: 0.8s !important;
 	}
 }
 
+.footer_content {
+	width: 50%;
+    height: 100%;
+    text-align: left;
+    display: table-cell;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    float: left;
+    vertical-align: middle;
+    padding-left: 50rem;
+
+    @media only screen and (max-width: 964px) {
+    	display: none;
+    } 
+}
+
+.footer_content__link {
+	text-decoration: none;
+	color: $text;
+	font-family: Lato-Regular;
+	font-size: 16rem;
+	opacity: 0.5;
+	&:hover {
+		color: $hover-text;
+		opacity: 1;
+	}
+	&:active {
+		font-weight: 600;
+		text-shadow: 2px 2px 20px rgba(0,0,0,0.82);
+	}
+	
+}
+
 .footer_menu {
 	display: table-cell;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     float: right;
-    margin-right: 8rem;
+    width: 50%;
+    text-align: right;
+    padding-right: 35rem;
 
     @media only screen and (max-width: 964px) {
     	display: inline-block;
     	float: none;
     	margin: 0;
     }
+}
+
+.svg_block {
+	float: right;
 }
 
 .social-media_link__image {
