@@ -14,28 +14,28 @@
 		<nav class="header__navigation">
 			<ul class="header__navigation list">
 				<li class="header__navigation list_item left">
-					<a class="link header__link" href="#home">
-						<span class="header__navigation list_item text">Home</span>
+					<a class="link header__link active-link" href="#home">
+						<span class="header__navigation list_item list_item-1 text">Home</span>
 					</a>
 				</li>
 				<li class="header__navigation list_item">
 					<a class="link header__link" href="#blog">
-						<span class="header__navigation list_item text">Blog</span>
+						<span class="header__navigation list_item list_item-2 text">Blog</span>
 					</a>
 				</li>
 				<li class="header__navigation list_item">
 					<a class="link header__link" href="#about-us">
-						<span class="header__navigation list_item text">About us</span>
+						<span class="header__navigation list_item list_item-3 text">About us</span>
 					</a>
 				</li>
 				<li class="header__navigation list_item">
 					<a class="link header__link" href="#team">
-						<span class="header__navigation list_item text">Team</span>
+						<span class="header__navigation list_item list_item-4 text">Team</span>
 					</a>
 				</li>
 				<li class="header__navigation list_item">
 					<a class="link header__link" href="#contact-us">
-						<span class="header__navigation list_item text">Contact us</span>
+						<span class="header__navigation list_item list_item-5 text">Contact us</span>
 					</a>
 				</li>
 			</ul>
@@ -70,12 +70,15 @@
 					<img class="nav-prev" src="images/nav.png">
 					<div class="content_text">
 						<h2 class="content_header">Home</h2>
-						<p class="content_paragraph">Lorem ipsum dolor sit amet, conse cetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+						<p class="content_paragraph copy_content">Lorem ipsum dolor sit amet, conse cetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
 						<a class="link" href="https://github.com/ShevchenkoJ">
 							<button type="button"  class="content_button">
 							Learn more
 							</button>
 						</a>
+						<div class="copy_button__wrapper">
+							<i class="far fa-copy copy_button"></i>
+						</div>
 					</div><!--content text-->
 					<img src="images/picture.png" class="content_image" alt="pic">
 					<img class="nav-next" src="images/nav.png">
@@ -92,7 +95,7 @@
 				</div>
 				<div class="footer_menu">
 					<div class="svg_block">
-						<a href="https://www.linkedin.com/in/julia-she/">
+						<a class="svg_block__link" href="https://www.linkedin.com/in/julia-she/">
 							<svg class="social-media_link__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve">
 								<g>
 									<path class="icon_color" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
@@ -101,7 +104,7 @@
 								</g>
 							</svg>
 						</a>
-						<a href="https://www.facebook.com/Julia.She.o">
+						<a class="svg_block__link" href="https://www.facebook.com/Julia.She.o">
 							<svg class="social-media_link__image" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
 								<g>
 									<circle class="icon_color" cx="56.098" cy="56.098" r="56.098"/>
@@ -109,7 +112,7 @@
 								</g>
 							</svg>
 						</a>
-						<a href="https://twitter.com/login">
+						<a class="svg_block__link" href="https://twitter.com/login">
 							<svg class="social-media_link__image icon_color" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 								<g id="Dark_Blue">
 									<circle class="st0" cx="200" cy="200" r="200"/>
@@ -119,7 +122,7 @@
 								</g>
 							</svg>
 						</a>
-						<a href="https://www.pinterest.com/">
+						<a class="svg_block__link" href="https://www.pinterest.com/">
 							<svg class="social-media_link__image" id="pinterest" width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
 	    						<g>
 	        						<path class="icon_color" d="M0,128.002 C0,180.416 31.518,225.444 76.619,245.241 C76.259,236.303 76.555,225.573 78.847,215.848 C81.308,205.457 95.317,146.1 95.317,146.1 C95.317,146.1 91.228,137.927 91.228,125.848 C91.228,106.879 102.222,92.712 115.914,92.712 C127.557,92.712 133.182,101.457 133.182,111.929 C133.182,123.633 125.717,141.14 121.878,157.355 C118.671,170.933 128.686,182.008 142.081,182.008 C166.333,182.008 182.667,150.859 182.667,113.953 C182.667,85.899 163.772,64.901 129.405,64.901 C90.577,64.901 66.388,93.857 66.388,126.201 C66.388,137.353 69.676,145.217 74.826,151.307 C77.194,154.104 77.523,155.229 76.666,158.441 C76.052,160.796 74.642,166.466 74.058,168.713 C73.206,171.955 70.579,173.114 67.649,171.917 C49.765,164.616 41.436,145.031 41.436,123.015 C41.436,86.654 72.102,43.054 132.918,43.054 C181.788,43.054 213.953,78.418 213.953,116.379 C213.953,166.592 186.037,204.105 144.887,204.105 C131.068,204.105 118.069,196.635 113.616,188.15 C113.616,188.15 106.185,217.642 104.611,223.337 C101.897,233.206 96.585,243.07 91.728,250.758 C103.24,254.156 115.401,256.007 128.005,256.007 C198.689,256.007 256.001,198.698 256.001,128.002 C256.001,57.309 198.689,0 128.005,0 C57.314,0 0,57.309 0,128.002 Z"></path>
@@ -142,6 +145,9 @@
 							Learn more
 							</button>
 						</a>
+						<div class="copy_button__wrapper">
+							<i class="far fa-copy copy_button"></i>
+						</div>
 					</div><!--content text-->
 					<img src="images/picture.png" class="content_image" alt="pic">
 					<img class="nav-next" src="images/nav.png">
@@ -203,6 +209,9 @@
 							Learn more
 							</button>
 						</a>
+						<div class="copy_button__wrapper">
+							<i class="far fa-copy copy_button"></i>
+						</div>
 					</div><!--content text-->
 					<img src="images/picture.png" class="content_image" alt="pic">
 					<img class="nav-next" src="images/nav.png">
@@ -264,6 +273,9 @@
 							Learn more
 							</button>
 						</a>
+						<div class="copy_button__wrapper">
+							<i class="far fa-copy copy_button"></i>
+						</div>
 					</div><!--content text-->
 					<img src="images/picture.png" class="content_image" alt="pic">
 					<img class="nav-next" src="images/nav.png">
@@ -325,6 +337,9 @@
 							Learn more
 							</button>
 						</a>
+						<div class="copy_button__wrapper">
+							<i class="far fa-copy copy_button"></i>
+						</div>
 					</div><!--content text-->
 					<img src="images/picture.png" class="content_image" alt="pic">
 					<img class="nav-next" src="images/nav.png">
