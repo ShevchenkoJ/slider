@@ -58,7 +58,7 @@ $white: #ffffff;
     }
 
     @media only screen and (max-width: 964px) and (orientation: landscape) {
-    	padding: 40rem 30rem 0;
+    	padding: 5rem 30rem 0;
     }
 }
 
@@ -258,7 +258,7 @@ $white: #ffffff;
 
 	@media only screen and (max-width: 964px) and (orientation: landscape) {
 		background-color: white;
-		transform: translate(0, 25%);
+		transform: translate(0, 7%);
 	}
 
 	@media only screen and (max-width: 964px) and (orientation: portrait) {
@@ -328,7 +328,9 @@ transition: 0.8s !important;
 
 	@media only screen and (max-width: 964px) and (orientation: landscape) {
 		position: relative;
-		top: 5rem;
+		top: 0;
+		padding-top: 0;
+    	margin-top: 0;
 		z-index: 10;
 	}
 }
@@ -366,7 +368,8 @@ transition: 0.8s !important;
     }
 
     @media only screen and (max-width: 964px) and (orientation: landscape) {
-    position: relative;
+	position: relative;
+	width: 50%;
 	}
 }
 
@@ -401,7 +404,12 @@ transition: 0.8s !important;
     @media only screen and (max-width: 750px) {
     	font-size: 22rem;
     	line-height: 24rem;
-    }
+	}
+	
+	@media only screen and (max-width: 750px) and (orientation: landscape) {
+    	font-size: 20rem;
+    	line-height: 20rem;
+	}
 }
 
 .content_image {
@@ -423,7 +431,8 @@ transition: 0.8s !important;
 	@media only screen and (max-width: 964px) and (orientation: landscape) {
 		padding-top: 5rem;
     	opacity: 0.5;
-    	z-index: 15;
+		z-index: 15;
+		width: 49%;
 	}
 }
 
@@ -493,10 +502,11 @@ transition: 0.8s !important;
 	display: block;
     width: 100%;
     text-align: center;
-    height: auto;
+    height: 50rem;
     position: absolute;
     bottom: 20px;
-    z-index: 30;
+	z-index: 30;
+	left: 0;
 	}
 }
 
