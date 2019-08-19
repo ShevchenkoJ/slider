@@ -22,7 +22,6 @@ $white: #ffffff;
 
 .html {
 	height: 100%;
-	background: blue;
 	overflow: hidden;
 }
 
@@ -31,7 +30,6 @@ $white: #ffffff;
 	width: 100%;
 	height: 100vh;
 	overflow-y: hidden;
-	background: green;
 
     @media only screen and (max-width: 964px) {
     	padding: 0;
@@ -513,27 +511,35 @@ transition: 0.8s !important;
 	}
 }
 
+@keyframes swipe {
+	0% {
+		transform: translateX(0%);
+	}
+	50% {
+		transform: translateX(-100%);
+	}	
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.instruction_animation {
+	animation-name: swipe;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
+
 .instruction_image {
 	display: none;
+	position: absolute;
+	transform: translateX(-50%);
 
 	@media only screen and (max-width: 964px) {
 		display: inline-block;
 		width: 36rem;
 		height: auto;
-		animation-duration: 2s;
-  		animation-name: swipe;
-  		animation-iteration-count: 2;
-  		animation-direction: alternate;
-	}
-
-	@keyframes slidein {
-		from {
-			left: 0;
-		}
-		
-		to {
-			left: 50rem;
-		}
 	}
 
 	@media only screen and (max-width: 964px) and (orientation: landscape) {
