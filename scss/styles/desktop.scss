@@ -516,7 +516,21 @@ transition: 0.8s !important;
 	@media only screen and (max-width: 964px) {
 		display: inline-block;
 		width: 36rem;
-    	height: auto;
+		height: auto;
+		animation-duration: 2s;
+  		animation-name: swipe;
+  		animation-iteration-count: 2;
+  		animation-direction: alternate;
+	}
+
+	@keyframes slidein {
+		from {
+			left: 0;
+		}
+		
+		to {
+			left: 50rem;
+		}
 	}
 
 	@media only screen and (max-width: 964px) and (orientation: landscape) {
